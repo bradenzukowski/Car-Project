@@ -1,6 +1,6 @@
 from ParkedCar.py import *
 from ParkingMeter.py import *
-from ParkingTiket import *
+from ParkingTicket import *
 from PoliceOfficer.py import *
 def main():
   pass
