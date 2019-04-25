@@ -1,0 +1,29 @@
+from ParkedCar import ParkedCar
+from ParkingMeter import ParkingMeter
+from PoliceOfficer import PoliceOfficer
+import math
+
+class ParkingTicket():
+
+  def __init__(self, a, b, c, d, e, f, g, h, i):
+    self.__make = a
+    self.__model = b
+    self.__color = c
+    self.__licenseNumber = d
+    self.__minutesParked = e
+    self.__minutespurchased = f
+    self.__minutesover = g
+    self.__officersName = h
+    self.__badgeNumber = i
+
+  def ticket_amount(self):
+    self.__fine = 25
+    self.__hoursover = math.ceil(self.__minutesover/60)
+    self.__fine += self.__hoursover*10
+    return self.__fine
+
+  def ticketing_officer(self):
+    return self.__officersName, self.__badgeNumber
+
+  def ticketed_car(self):
+    return self.__make, self.__model, self.__color, self.__licenseNumber
