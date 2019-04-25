@@ -27,3 +27,6 @@ class ParkingTicket():
 
   def ticketed_car(self):
     return self.__make, self.__model, self.__color, self.__licenseNumber
+  
+  def __str__(self):
+    return ("Your fine is " + str(self.ticket_amount()) + " Your ticketing officer is " + str(self.ticketing_officer()))
