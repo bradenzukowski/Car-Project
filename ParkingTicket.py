@@ -5,16 +5,16 @@ import math
 
 class ParkingTicket():
 
-  def __init__(self, a, b, c, d, e, f, g, h, i):
+  def __init__(self, a, b, c, d, e, f, g, h):
     self.__make = a
     self.__model = b
     self.__color = c
     self.__licenseNumber = d
     self.__minutesParked = e
     self.__minutespurchased = f
-    self.__minutesover = g
-    self.__officersName = h
-    self.__badgeNumber = i
+    self.__minutesover = self.__minutespurchased - self.__minutesParked
+    self.__officersName = g
+    self.__badgeNumber = h
 
   def ticket_amount(self):
     self.__fine = 25
