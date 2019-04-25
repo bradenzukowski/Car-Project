@@ -14,14 +14,14 @@ class ParkedCar():
  def set_color(self,color):
    self.__color=color
  def set_licenseNumber(self,licenseNumber):
-   self.licenseNumber= licenseNumber
+   self.licenseNumber=licenseNumber
  def get_make(self):
    return self.__make
  def get_minutesParked(self):
    return self.__minutesParked
  def get_model(self):
    return self.__model
- def set_color(self):
+ def get_color(self):
    return self.__color
  def get_licenseNumber(self):
    return self.licenseNumber
